@@ -29,13 +29,21 @@ Enroll for a certificate given a PEM encoded PKCS#10 CSR.
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1CertificateApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1CertificateApi apiInstance = new V1CertificateApi(defaultClient);
     CertificateRequestRestRequest certificateRequestRestRequest = new CertificateRequestRestRequest(); // CertificateRequestRestRequest | 
@@ -91,13 +99,21 @@ Creates a keystore for the specified end entity
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1CertificateApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1CertificateApi apiInstance = new V1CertificateApi(defaultClient);
     KeyStoreRestRequest keyStoreRestRequest = new KeyStoreRestRequest(); // KeyStoreRestRequest | 
@@ -153,13 +169,21 @@ Enroll for a certificate given a PEM encoded PKCS#10 CSR.
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1CertificateApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1CertificateApi apiInstance = new V1CertificateApi(defaultClient);
     EnrollCertificateRestRequest enrollCertificateRestRequest = new EnrollCertificateRestRequest(); // EnrollCertificateRestRequest | 
@@ -215,13 +239,21 @@ Finalizes enrollment after administrator approval using request Id
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1CertificateApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1CertificateApi apiInstance = new V1CertificateApi(defaultClient);
     Integer requestId = 56; // Integer | Approval request id
@@ -279,13 +311,21 @@ List of certificates expiring within specified number of days
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1CertificateApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1CertificateApi apiInstance = new V1CertificateApi(defaultClient);
     Long days = 56L; // Long | Request certificates expiring within this number of days
@@ -345,13 +385,21 @@ Checks revocation status of the specified certificate
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1CertificateApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1CertificateApi apiInstance = new V1CertificateApi(defaultClient);
     String issuerDn = "issuerDn_example"; // String | Subject DN of the issuing CA
@@ -409,13 +457,21 @@ Revokes the specified certificate
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1CertificateApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1CertificateApi apiInstance = new V1CertificateApi(defaultClient);
     String issuerDn = "issuerDn_example"; // String | Subject DN of the issuing CA
@@ -477,13 +533,21 @@ Insert as many search criteria as needed. A reference about allowed values for c
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1CertificateApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1CertificateApi apiInstance = new V1CertificateApi(defaultClient);
     SearchCertificatesRestRequest searchCertificatesRestRequest = new SearchCertificatesRestRequest(); // SearchCertificatesRestRequest | Maximum number of results and collection of search criterias.
@@ -539,13 +603,21 @@ Returns status, API version and EJBCA version.
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1CertificateApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1CertificateApi apiInstance = new V1CertificateApi(defaultClient);
     try {

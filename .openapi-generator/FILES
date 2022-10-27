@@ -14,7 +14,6 @@ docs/CertificateRequestRestRequest.md
 docs/CertificateRestResponse.md
 docs/CertificateRestResponseV2.md
 docs/CertificatesRestResponse.md
-docs/ConfigdumpResults.md
 docs/CreateCrlRestResponse.md
 docs/CrlRestResponse.md
 docs/CryptoTokenActivationRestRequest.md
@@ -50,7 +49,6 @@ docs/SshPublicKeyRestResponse.md
 docs/V1CaApi.md
 docs/V1CaManagementApi.md
 docs/V1CertificateApi.md
-docs/V1ConfigdumpApi.md
 docs/V1CryptotokenApi.md
 docs/V1EndentityApi.md
 docs/V1SshApi.md
@@ -81,7 +79,6 @@ src/main/java/com/keyfactor/ejbca/client/StringUtil.java
 src/main/java/com/keyfactor/ejbca/client/api/V1CaApi.java
 src/main/java/com/keyfactor/ejbca/client/api/V1CaManagementApi.java
 src/main/java/com/keyfactor/ejbca/client/api/V1CertificateApi.java
-src/main/java/com/keyfactor/ejbca/client/api/V1ConfigdumpApi.java
 src/main/java/com/keyfactor/ejbca/client/api/V1CryptotokenApi.java
 src/main/java/com/keyfactor/ejbca/client/api/V1EndentityApi.java
 src/main/java/com/keyfactor/ejbca/client/api/V1SshApi.java
@@ -101,7 +98,6 @@ src/main/java/com/keyfactor/ejbca/client/model/CertificateRequestRestRequest.jav
 src/main/java/com/keyfactor/ejbca/client/model/CertificateRestResponse.java
 src/main/java/com/keyfactor/ejbca/client/model/CertificateRestResponseV2.java
 src/main/java/com/keyfactor/ejbca/client/model/CertificatesRestResponse.java
-src/main/java/com/keyfactor/ejbca/client/model/ConfigdumpResults.java
 src/main/java/com/keyfactor/ejbca/client/model/CreateCrlRestResponse.java
 src/main/java/com/keyfactor/ejbca/client/model/CrlRestResponse.java
 src/main/java/com/keyfactor/ejbca/client/model/CryptoTokenActivationRestRequest.java
@@ -137,7 +133,6 @@ src/main/java/com/keyfactor/ejbca/client/model/SshPublicKeyRestResponse.java
 src/test/java/com/keyfactor/ejbca/client/api/V1CaApiTest.java
 src/test/java/com/keyfactor/ejbca/client/api/V1CaManagementApiTest.java
 src/test/java/com/keyfactor/ejbca/client/api/V1CertificateApiTest.java
-src/test/java/com/keyfactor/ejbca/client/api/V1ConfigdumpApiTest.java
 src/test/java/com/keyfactor/ejbca/client/api/V1CryptotokenApiTest.java
 src/test/java/com/keyfactor/ejbca/client/api/V1EndentityApiTest.java
 src/test/java/com/keyfactor/ejbca/client/api/V1SshApiTest.java
@@ -152,7 +147,6 @@ src/test/java/com/keyfactor/ejbca/client/model/CertificateRequestRestRequestTest
 src/test/java/com/keyfactor/ejbca/client/model/CertificateRestResponseTest.java
 src/test/java/com/keyfactor/ejbca/client/model/CertificateRestResponseV2Test.java
 src/test/java/com/keyfactor/ejbca/client/model/CertificatesRestResponseTest.java
-src/test/java/com/keyfactor/ejbca/client/model/ConfigdumpResultsTest.java
 src/test/java/com/keyfactor/ejbca/client/model/CreateCrlRestResponseTest.java
 src/test/java/com/keyfactor/ejbca/client/model/CrlRestResponseTest.java
 src/test/java/com/keyfactor/ejbca/client/model/CryptoTokenActivationRestRequestTest.java

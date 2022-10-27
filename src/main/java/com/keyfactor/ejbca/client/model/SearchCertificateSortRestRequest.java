@@ -48,7 +48,7 @@ import com.keyfactor.ejbca.client.JSON;
  * Use one of allowed values as property and operation. Available propertiesUSERNAME  ISSUER_DN  SUBJECT_DN  EXTERNAL_ACCOUNT_BINDING_ID  END_ENTITY_PROFILE  CERTIFICATE_PROFILE  STATUS  TAG  TYPE  UPDATE_TIME  ISSUED_DATE  EXPIRE_DATE  REVOCATION_DATE   Available operationsASC  DESC  
  */
 @ApiModel(description = "Use one of allowed values as property and operation. Available propertiesUSERNAME  ISSUER_DN  SUBJECT_DN  EXTERNAL_ACCOUNT_BINDING_ID  END_ENTITY_PROFILE  CERTIFICATE_PROFILE  STATUS  TAG  TYPE  UPDATE_TIME  ISSUED_DATE  EXPIRE_DATE  REVOCATION_DATE   Available operationsASC  DESC  ")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-10-27T00:18:55.030-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-10-27T11:03:33.187-07:00[America/Phoenix]")
 public class SearchCertificateSortRestRequest {
   /**
    * Sorted by

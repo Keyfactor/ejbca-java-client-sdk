@@ -24,13 +24,21 @@ Returns list of all authorized end entity profiles for the current admin token
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V2EndentityApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V2EndentityApi apiInstance = new V2EndentityApi(defaultClient);
     try {
@@ -82,13 +90,21 @@ Returns End Entity Profile configurations: List of available CAs, list of availa
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V2EndentityApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V2EndentityApi apiInstance = new V2EndentityApi(defaultClient);
     String endentityProfileName = "endentityProfileName_example"; // String | 
@@ -144,13 +160,21 @@ Insert as many search criteria as needed and optionally a sorting criteria. A re
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V2EndentityApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V2EndentityApi apiInstance = new V2EndentityApi(defaultClient);
     SearchEndEntitiesRestRequestV2 searchEndEntitiesRestRequestV2 = new SearchEndEntitiesRestRequestV2(); // SearchEndEntitiesRestRequestV2 | Maximum number of results and collection of search criterias.
@@ -206,13 +230,21 @@ Returns status, API version and EJBCA version.
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V2EndentityApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V2EndentityApi apiInstance = new V2EndentityApi(defaultClient);
     try {

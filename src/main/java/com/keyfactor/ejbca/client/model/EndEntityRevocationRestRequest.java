@@ -48,7 +48,7 @@ import com.keyfactor.ejbca.client.JSON;
  * End Entity revocation request. Available reason codes:   0 - Unspecified,  1 - Key Compromise,  2 - CA Compromise,  3 - Affiliation Changed,  4 - Superseded,  5 - Cessation of Operation,  6 - Certificate Hold,  8 - Remove from CRL,  9 - Privileges Withdrawn,  10 - AA Compromise
  */
 @ApiModel(description = "End Entity revocation request. Available reason codes:   0 - Unspecified,  1 - Key Compromise,  2 - CA Compromise,  3 - Affiliation Changed,  4 - Superseded,  5 - Cessation of Operation,  6 - Certificate Hold,  8 - Remove from CRL,  9 - Privileges Withdrawn,  10 - AA Compromise")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-10-27T00:18:55.030-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-10-27T11:03:33.187-07:00[America/Phoenix]")
 public class EndEntityRevocationRestRequest {
   /**
    * Reason code

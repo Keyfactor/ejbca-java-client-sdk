@@ -2,7 +2,7 @@
 
 EJBCA REST Interface
 - API version: 1.0
-  - Build date: 2022-10-27T00:18:55.030-07:00[America/Phoenix]
+  - Build date: 2022-10-27T11:03:33.187-07:00[America/Phoenix]
 
 API reference documentation.
 
@@ -141,13 +141,6 @@ All URIs are relative to *http://localhost/ejbca/ejbca-rest-api*
 | *V1CertificateApi* | [**revokeCertificate**](docs/V1CertificateApi.md#revokeCertificate) | **PUT** /v1/certificate/{issuer_dn}/{certificate_serial_number}/revoke | Revokes the specified certificate |
 | *V1CertificateApi* | [**searchCertificates**](docs/V1CertificateApi.md#searchCertificates) | **POST** /v1/certificate/search | Searches for certificates confirming given criteria. |
 | *V1CertificateApi* | [**status2**](docs/V1CertificateApi.md#status2) | **GET** /v1/certificate/status | Get the status of this REST Resource |
-| *V1ConfigdumpApi* | [**getJsonConfigdump**](docs/V1ConfigdumpApi.md#getJsonConfigdump) | **GET** /v1/configdump | Get the configuration in JSON. |
-| *V1ConfigdumpApi* | [**getJsonConfigdumpForType**](docs/V1ConfigdumpApi.md#getJsonConfigdumpForType) | **GET** /v1/configdump/{type} | Get the configuration for type in JSON. |
-| *V1ConfigdumpApi* | [**getJsonConfigdumpForTypeAndSetting**](docs/V1ConfigdumpApi.md#getJsonConfigdumpForTypeAndSetting) | **GET** /v1/configdump/{type}/{setting} | Get the configuration for a type and setting in JSON. |
-| *V1ConfigdumpApi* | [**getZipExport**](docs/V1ConfigdumpApi.md#getZipExport) | **GET** /v1/configdump/configdump.zip | Get the configuration as a ZIP file. |
-| *V1ConfigdumpApi* | [**postJsonImport**](docs/V1ConfigdumpApi.md#postJsonImport) | **POST** /v1/configdump | Put the configuration in JSON. |
-| *V1ConfigdumpApi* | [**postZipImport**](docs/V1ConfigdumpApi.md#postZipImport) | **POST** /v1/configdump/configdump.zip | Put the configuration as a ZIP file. |
-| *V1ConfigdumpApi* | [**status4**](docs/V1ConfigdumpApi.md#status4) | **GET** /v1/configdump/status | Get the status of this REST Resource |
 | *V1CryptotokenApi* | [**activate1**](docs/V1CryptotokenApi.md#activate1) | **PUT** /v1/cryptotoken/{cryptotoken_name}/activate | Activate a Crypto Token |
 | *V1CryptotokenApi* | [**deactivate1**](docs/V1CryptotokenApi.md#deactivate1) | **PUT** /v1/cryptotoken/{cryptotoken_name}/deactivate | Deactivate a Crypto Token |
 | *V1CryptotokenApi* | [**generateKeys**](docs/V1CryptotokenApi.md#generateKeys) | **POST** /v1/cryptotoken/{cryptotoken_name}/generatekeys | Generate keys |
@@ -181,7 +174,6 @@ All URIs are relative to *http://localhost/ejbca/ejbca-rest-api*
  - [CertificateRestResponse](docs/CertificateRestResponse.md)
  - [CertificateRestResponseV2](docs/CertificateRestResponseV2.md)
  - [CertificatesRestResponse](docs/CertificatesRestResponse.md)
- - [ConfigdumpResults](docs/ConfigdumpResults.md)
  - [CreateCrlRestResponse](docs/CreateCrlRestResponse.md)
  - [CrlRestResponse](docs/CrlRestResponse.md)
  - [CryptoTokenActivationRestRequest](docs/CryptoTokenActivationRestRequest.md)
@@ -218,11 +210,8 @@ All URIs are relative to *http://localhost/ejbca/ejbca-rest-api*
 
 ## Documentation for Authorization
 
+All endpoints do not require authorization.
 Authentication schemes defined for the API:
-### bearerAuth
-
-- **Type**: HTTP basic authentication
-
 
 ## Recommendation
 

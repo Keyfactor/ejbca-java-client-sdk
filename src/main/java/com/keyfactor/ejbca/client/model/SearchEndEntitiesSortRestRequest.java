@@ -48,7 +48,7 @@ import com.keyfactor.ejbca.client.JSON;
  * Use one of allowed values as property and operation. Available propertiesUSERNAME  SUBJECT_DN  SUBJECT_ALT_NAME  END_ENTITY_PROFILE(by databse identifier, not user-given name)  CERTIFICATE_PROFILE(by identifier)  CA(by identifier)  STATUS  UPDATE_TIME  CREATED_DATE   Available operationsASC  DESC  
  */
 @ApiModel(description = "Use one of allowed values as property and operation. Available propertiesUSERNAME  SUBJECT_DN  SUBJECT_ALT_NAME  END_ENTITY_PROFILE(by databse identifier, not user-given name)  CERTIFICATE_PROFILE(by identifier)  CA(by identifier)  STATUS  UPDATE_TIME  CREATED_DATE   Available operationsASC  DESC  ")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-10-27T00:18:55.030-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-10-27T11:03:33.187-07:00[America/Phoenix]")
 public class SearchEndEntitiesSortRestRequest {
   /**
    * Sorted by

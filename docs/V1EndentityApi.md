@@ -26,13 +26,21 @@ Register new end entity based on provided registration data
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1EndentityApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1EndentityApi apiInstance = new V1EndentityApi(defaultClient);
     AddEndEntityRestRequest addEndEntityRestRequest = new AddEndEntityRestRequest(); // AddEndEntityRestRequest | request
@@ -87,13 +95,21 @@ Deletes specified end entity and keeps certificate information untouched, if end
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1EndentityApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1EndentityApi apiInstance = new V1EndentityApi(defaultClient);
     String endentityName = "endentityName_example"; // String | Name of the end entity
@@ -148,13 +164,21 @@ Revokes all certificates associated with given end entity name with specified re
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1EndentityApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1EndentityApi apiInstance = new V1EndentityApi(defaultClient);
     String endentityName = "endentityName_example"; // String | Name of the end entity
@@ -211,13 +235,21 @@ Insert as many search criteria as needed. A reference about allowed values for c
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1EndentityApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1EndentityApi apiInstance = new V1EndentityApi(defaultClient);
     SearchEndEntitiesRestRequest searchEndEntitiesRestRequest = new SearchEndEntitiesRestRequest(); // SearchEndEntitiesRestRequest | Maximum number of results and collection of search criterias.
@@ -273,13 +305,21 @@ Edit status, password and token type of related end entity
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1EndentityApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1EndentityApi apiInstance = new V1EndentityApi(defaultClient);
     String endentityName = "endentityName_example"; // String | Name of the end entity to edit status for
@@ -336,13 +376,21 @@ Returns status, API version and EJBCA version.
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1EndentityApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1EndentityApi apiInstance = new V1EndentityApi(defaultClient);
     try {

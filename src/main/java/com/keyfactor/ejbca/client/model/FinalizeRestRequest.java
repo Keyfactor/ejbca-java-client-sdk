@@ -47,7 +47,7 @@ import com.keyfactor.ejbca.client.JSON;
 /**
  * FinalizeRestRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-10-27T00:18:55.030-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-10-27T11:03:33.187-07:00[America/Phoenix]")
 public class FinalizeRestRequest {
   /**
    * Response format

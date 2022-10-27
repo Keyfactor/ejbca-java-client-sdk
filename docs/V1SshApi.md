@@ -22,13 +22,21 @@ Retrieves a CA&#39;s public key in SSH format.
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1SshApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1SshApi apiInstance = new V1SshApi(defaultClient);
     String caName = "caName_example"; // String | 
@@ -84,13 +92,21 @@ Returns status, API version and EJBCA version.
 import com.keyfactor.ejbca.client.ApiClient;
 import com.keyfactor.ejbca.client.ApiException;
 import com.keyfactor.ejbca.client.Configuration;
-import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.model.*;
 import com.keyfactor.ejbca.client.api.V1SshApi;
+
+import java.nio.file.Path;
 
 public class Example {
   public static void main(String[] args) {
+    // Set base path to EJBCA REST API
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost/ejbca/ejbca-rest-api");
+
+    // Retrieve client certificate and key
+    Path cert = Paths.get("path/to/clientcertificate");
+    Path key = Paths.get("path/to/key");
+    defaultClient.setClientCert(cert, key);
 
     V1SshApi apiInstance = new V1SshApi(defaultClient);
     try {

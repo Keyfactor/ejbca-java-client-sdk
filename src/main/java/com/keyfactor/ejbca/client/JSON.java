@@ -102,7 +102,6 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new com.keyfactor.ejbca.client.model.CertificateRestResponse.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.keyfactor.ejbca.client.model.CertificateRestResponseV2.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.keyfactor.ejbca.client.model.CertificatesRestResponse.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new com.keyfactor.ejbca.client.model.ConfigdumpResults.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.keyfactor.ejbca.client.model.CreateCrlRestResponse.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.keyfactor.ejbca.client.model.CrlRestResponse.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.keyfactor.ejbca.client.model.CryptoTokenActivationRestRequest.CustomTypeAdapterFactory());
