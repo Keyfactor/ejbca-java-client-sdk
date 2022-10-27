@@ -1,6 +1,6 @@
 lazy val root = (project in file(".")).
   settings(
-    organization := "org.openapitools",
+    organization := "com.keyfactor.ejbca",
     name := "ejbca-java-client-sdk",
     version := "1.0",
     scalaVersion := "2.11.4",

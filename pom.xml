@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.openapitools</groupId>
+    <groupId>com.keyfactor.ejbca</groupId>
     <artifactId>ejbca-java-client-sdk</artifactId>
     <packaging>jar</packaging>
     <name>ejbca-java-client-sdk</name>
     <version>1.0</version>
-    <url>https://github.com/openapitools/openapi-generator</url>
+    <url>https://github.com/Keyfactor/ejbca-java-client-sdk</url>
     <description>EJBCA Java SDK</description>
     <scm>
         <connection>scm:git:git@github.com:openapitools/openapi-generator.git</connection>

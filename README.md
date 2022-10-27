@@ -2,7 +2,7 @@
 
 EJBCA REST Interface
 - API version: 1.0
-  - Build date: 2022-10-26T23:53:22.978-07:00[America/Phoenix]
+  - Build date: 2022-10-27T00:18:55.030-07:00[America/Phoenix]
 
 API reference documentation.
 
@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.openapitools</groupId>
+  <groupId>com.keyfactor.ejbca</groupId>
   <artifactId>ejbca-java-client-sdk</artifactId>
   <version>1.0</version>
   <scope>compile</scope>
@@ -56,7 +56,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "org.openapitools:ejbca-java-client-sdk:1.0"
+     implementation "com.keyfactor.ejbca:ejbca-java-client-sdk:1.0"
   }
 ```
 
