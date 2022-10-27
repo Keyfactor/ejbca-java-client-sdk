@@ -21,11 +21,11 @@ Returns list of all authorized end entity profiles for the current admin token
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V2EndentityApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V2EndentityApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -79,11 +79,11 @@ Returns End Entity Profile configurations: List of available CAs, list of availa
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V2EndentityApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V2EndentityApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -141,11 +141,11 @@ Insert as many search criteria as needed and optionally a sorting criteria. A re
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V2EndentityApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V2EndentityApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -203,11 +203,11 @@ Returns status, API version and EJBCA version.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V2EndentityApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V2EndentityApi;
 
 public class Example {
   public static void main(String[] args) {

@@ -20,11 +20,11 @@ Activates CA with given name
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CaManagementApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CaManagementApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -81,11 +81,11 @@ Deactivates CA with given name
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CaManagementApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CaManagementApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -142,11 +142,11 @@ Returns status, API version and EJBCA version.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CaManagementApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CaManagementApi;
 
 public class Example {
   public static void main(String[] args) {

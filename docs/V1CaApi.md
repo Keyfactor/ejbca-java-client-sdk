@@ -23,11 +23,11 @@ Create CRL(main, partition and delta) issued by this CA
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CaApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CaApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -87,11 +87,11 @@ Get PEM file with the active CA certificate chain
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CaApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CaApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -148,11 +148,11 @@ Returns the latest CRL issued by this CA
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CaApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CaApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -214,11 +214,11 @@ Import a certificate revocation list (CRL) for a CA
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CaApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CaApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -280,11 +280,11 @@ Returns the Response containing the list of CAs with general information per CA 
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CaApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CaApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -338,11 +338,11 @@ Returns status, API version and EJBCA version.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CaApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CaApi;
 
 public class Example {
   public static void main(String[] args) {

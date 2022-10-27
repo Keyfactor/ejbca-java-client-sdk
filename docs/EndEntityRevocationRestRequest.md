@@ -9,7 +9,7 @@ End Entity revocation request. Available reason codes:   0 - Unspecified,  1 - K
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**reasonCode** | [**ReasonCodeEnum**](#ReasonCodeEnum) | Reason code |  [optional] |
-|**delete** | [**DeleteEnum**](#DeleteEnum) | Delete |  [optional] |
+|**delete** | **Boolean** | Delete |  [optional] |
 
 
 
@@ -27,15 +27,6 @@ End Entity revocation request. Available reason codes:   0 - Unspecified,  1 - K
 | NUMBER_8 | 8 |
 | NUMBER_9 | 9 |
 | NUMBER_10 | 10 |
-
-
-
-## Enum: DeleteEnum
-
-| Name | Value |
-|---- | -----|
-| TRUE | &quot;true&quot; |
-| FALSE | &quot;false&quot; |
 
 
 

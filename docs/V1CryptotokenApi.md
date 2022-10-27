@@ -22,11 +22,11 @@ Activates Crypto Token given name and activation code
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CryptotokenApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CryptotokenApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -85,11 +85,11 @@ Deactivates Crypto Token given name
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CryptotokenApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CryptotokenApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -146,11 +146,11 @@ Generates a key pair given crypto token name, key pair alias, key algorithm and 
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CryptotokenApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CryptotokenApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -209,11 +209,11 @@ Remove a key pair given crypto token name and key pair alias to be removed.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CryptotokenApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CryptotokenApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -272,11 +272,11 @@ Returns status, API version and EJBCA version.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CryptotokenApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CryptotokenApi;
 
 public class Example {
   public static void main(String[] args) {

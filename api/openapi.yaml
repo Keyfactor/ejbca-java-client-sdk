@@ -281,6 +281,7 @@ paths:
         name: date
         required: false
         schema:
+          format: date-time
           type: string
         style: form
       responses:
@@ -1345,10 +1346,7 @@ components:
         crl:
           description: Certificate Revokation List (CRL)
           example: MIIEV...SqQPE
-          items:
-            format: byte
-            type: string
-          type: array
+          type: string
         response_format:
           description: Response format
           example: DER
@@ -1816,29 +1814,29 @@ components:
       type: object
     CertificateRestResponseV2:
       example:
-        issuer_dn: CN=ExampleCA
-        not_before: 1659952800011
-        subject_alt_name: rfc822Name=john.doe@example.com
-        crl_partition_index: 1
-        serial_number: 1234567890ABCDEF
-        end_entity_profile_id: 1
-        type: 0
-        certificate_request: |-
+        crlPartitionIndex: 1
+        serialNumber: 1234567890ABCDEF
+        issuerDN: CN=ExampleCA
+        subjectKeyId: z123abc456def789ghi123klm456nop789qrs123
+        certificateRequest: |-
           -----BEGIN CERTIFICATE REQUEST-----
           MIICh...V8shQ==
           -----END CERTIFICATE REQUEST-----
-        udpate_time: 1659967133000
-        c_afingerprint: abc123def456ghi789klm123nop456qrs789tvx1
-        subject_key_id: z123abc456def789ghi123klm456nop789qrs123
-        expire_date: 2147483647000
-        subject_dn: "CN=John Doe,SURNAME=Doe,GIVENNAME=John,C=SE"
-        certificate_profile_id: 1
+        endEntityProfileId: 1
+        revocationDate: -1
+        cAFingerprint: abc123def456ghi789klm123nop456qrs789tvx1
+        udpateTime: 1659967133000
+        type: 0
+        notBefore: 1659952800011
         fingerprint: 123abc456def789ghi123klm456nop789qrs123t
-        revocation_reason: -1
-        revocation_date: -1
+        base64Cert: TUlJR...t2A==
+        expireDate: 2147483647000
         tag: tag
-        base64_cert: TUlJR...t2A==
+        revocationReason: -1
+        certificateProfileId: 1
         status: 20
+        subjectAltName: rfc822Name=john.doe@example.com
+        subjectDN: "CN=John Doe,SURNAME=Doe,GIVENNAME=John,C=SE"
         username: JohnDoe
       properties:
         fingerprint:
@@ -1846,47 +1844,47 @@ components:
           example: 123abc456def789ghi123klm456nop789qrs123t
           readOnly: true
           type: string
-        c_afingerprint:
+        cAFingerprint:
           description: Certificate Authority fingerprint
           example: abc123def456ghi789klm123nop456qrs789tvx1
           readOnly: true
           type: string
-        certificate_profile_id:
+        certificateProfileId:
           description: Certificate Profile Identifier
           example: 1
           format: int32
           readOnly: true
           type: integer
-        end_entity_profile_id:
+        endEntityProfileId:
           description: End Entity Profile Identifier
           example: 1
           format: int32
           readOnly: true
           type: integer
-        expire_date:
+        expireDate:
           description: Date after which certificate should be considered expired
           example: 2147483647000
           format: int64
           readOnly: true
           type: integer
-        issuer_dn:
+        issuerDN:
           description: Issuer Distinguished Name
           example: CN=ExampleCA
           readOnly: true
           type: string
-        not_before:
+        notBefore:
           description: Date at which certificate became valid
           example: 1659952800011
           format: int64
           readOnly: true
           type: integer
-        revocation_date:
+        revocationDate:
           description: Revocation date
           example: -1
           format: int64
           readOnly: true
           type: integer
-        revocation_reason:
+        revocationReason:
           description: Revocation reson
           enum:
           - -1
@@ -1904,7 +1902,7 @@ components:
           format: int32
           readOnly: true
           type: integer
-        serial_number:
+        serialNumber:
           description: Hex Serial Number
           example: 1234567890ABCDEF
           readOnly: true
@@ -1915,17 +1913,17 @@ components:
           format: int32
           readOnly: true
           type: integer
-        subject_alt_name:
+        subjectAltName:
           description: Subject Alternative Name (SAN)
           example: rfc822Name=john.doe@example.com
           readOnly: true
           type: string
-        subject_dn:
+        subjectDN:
           description: Subject Distinguished Name
           example: "CN=John Doe,SURNAME=Doe,GIVENNAME=John,C=SE"
           readOnly: true
           type: string
-        subject_key_id:
+        subjectKeyId:
           description: Subject Key Identifier
           example: z123abc456def789ghi123klm456nop789qrs123
           readOnly: true
@@ -1937,7 +1935,7 @@ components:
           format: int32
           readOnly: true
           type: integer
-        udpate_time:
+        udpateTime:
           description: Update time
           example: 1659967133000
           format: int64
@@ -1948,15 +1946,12 @@ components:
           example: JohnDoe
           readOnly: true
           type: string
-        base64_cert:
+        base64Cert:
           description: Base64 encoded certificate
           example: TUlJR...t2A==
-          items:
-            format: byte
-            type: string
           readOnly: true
-          type: array
-        certificate_request:
+          type: string
+        certificateRequest:
           description: Certificate request
           example: |-
             -----BEGIN CERTIFICATE REQUEST-----
@@ -1964,7 +1959,7 @@ components:
             -----END CERTIFICATE REQUEST-----
           readOnly: true
           type: string
-        crl_partition_index:
+        crlPartitionIndex:
           description: CRL partition index
           example: 1
           format: int32
@@ -1994,53 +1989,53 @@ components:
           current_page: 1
           page_size: 6
         certificates:
-        - issuer_dn: CN=ExampleCA
-          not_before: 1659952800011
-          subject_alt_name: rfc822Name=john.doe@example.com
-          crl_partition_index: 1
-          serial_number: 1234567890ABCDEF
-          end_entity_profile_id: 1
-          type: 0
-          certificate_request: |-
+        - crlPartitionIndex: 1
+          serialNumber: 1234567890ABCDEF
+          issuerDN: CN=ExampleCA
+          subjectKeyId: z123abc456def789ghi123klm456nop789qrs123
+          certificateRequest: |-
             -----BEGIN CERTIFICATE REQUEST-----
             MIICh...V8shQ==
             -----END CERTIFICATE REQUEST-----
-          udpate_time: 1659967133000
-          c_afingerprint: abc123def456ghi789klm123nop456qrs789tvx1
-          subject_key_id: z123abc456def789ghi123klm456nop789qrs123
-          expire_date: 2147483647000
-          subject_dn: "CN=John Doe,SURNAME=Doe,GIVENNAME=John,C=SE"
-          certificate_profile_id: 1
+          endEntityProfileId: 1
+          revocationDate: -1
+          cAFingerprint: abc123def456ghi789klm123nop456qrs789tvx1
+          udpateTime: 1659967133000
+          type: 0
+          notBefore: 1659952800011
           fingerprint: 123abc456def789ghi123klm456nop789qrs123t
-          revocation_reason: -1
-          revocation_date: -1
+          base64Cert: TUlJR...t2A==
+          expireDate: 2147483647000
           tag: tag
-          base64_cert: TUlJR...t2A==
+          revocationReason: -1
+          certificateProfileId: 1
           status: 20
+          subjectAltName: rfc822Name=john.doe@example.com
+          subjectDN: "CN=John Doe,SURNAME=Doe,GIVENNAME=John,C=SE"
           username: JohnDoe
-        - issuer_dn: CN=ExampleCA
-          not_before: 1659952800011
-          subject_alt_name: rfc822Name=john.doe@example.com
-          crl_partition_index: 1
-          serial_number: 1234567890ABCDEF
-          end_entity_profile_id: 1
-          type: 0
-          certificate_request: |-
+        - crlPartitionIndex: 1
+          serialNumber: 1234567890ABCDEF
+          issuerDN: CN=ExampleCA
+          subjectKeyId: z123abc456def789ghi123klm456nop789qrs123
+          certificateRequest: |-
             -----BEGIN CERTIFICATE REQUEST-----
             MIICh...V8shQ==
             -----END CERTIFICATE REQUEST-----
-          udpate_time: 1659967133000
-          c_afingerprint: abc123def456ghi789klm123nop456qrs789tvx1
-          subject_key_id: z123abc456def789ghi123klm456nop789qrs123
-          expire_date: 2147483647000
-          subject_dn: "CN=John Doe,SURNAME=Doe,GIVENNAME=John,C=SE"
-          certificate_profile_id: 1
+          endEntityProfileId: 1
+          revocationDate: -1
+          cAFingerprint: abc123def456ghi789klm123nop456qrs789tvx1
+          udpateTime: 1659967133000
+          type: 0
+          notBefore: 1659952800011
           fingerprint: 123abc456def789ghi123klm456nop789qrs123t
-          revocation_reason: -1
-          revocation_date: -1
+          base64Cert: TUlJR...t2A==
+          expireDate: 2147483647000
           tag: tag
-          base64_cert: TUlJR...t2A==
+          revocationReason: -1
+          certificateProfileId: 1
           status: 20
+          subjectAltName: rfc822Name=john.doe@example.com
+          subjectDN: "CN=John Doe,SURNAME=Doe,GIVENNAME=John,C=SE"
           username: JohnDoe
       properties:
         certificates:
@@ -2491,9 +2486,6 @@ components:
           type: integer
         delete:
           description: Delete
-          enum:
-          - true
-          - false
           example: true
           type: boolean
       type: object
@@ -2733,4 +2725,8 @@ components:
           - useDefault
           type: string
       type: object
+  securitySchemes:
+    bearerAuth:
+      scheme: bearer
+      type: http
 

@@ -26,11 +26,11 @@ Enroll for a certificate given a PEM encoded PKCS#10 CSR.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CertificateApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CertificateApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -88,11 +88,11 @@ Creates a keystore for the specified end entity
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CertificateApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CertificateApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -150,11 +150,11 @@ Enroll for a certificate given a PEM encoded PKCS#10 CSR.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CertificateApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CertificateApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -212,11 +212,11 @@ Finalizes enrollment after administrator approval using request Id
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CertificateApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CertificateApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -276,11 +276,11 @@ List of certificates expiring within specified number of days
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CertificateApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CertificateApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -342,11 +342,11 @@ Checks revocation status of the specified certificate
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CertificateApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CertificateApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -406,11 +406,11 @@ Revokes the specified certificate
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CertificateApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CertificateApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -421,7 +421,7 @@ public class Example {
     String issuerDn = "issuerDn_example"; // String | Subject DN of the issuing CA
     String certificateSerialNumber = "certificateSerialNumber_example"; // String | hex serial number (without prefix, e.g. '00')
     String reason = "reason_example"; // String | Must be valid RFC5280 reason. One of  NOT_REVOKED, UNSPECIFIED ,KEY_COMPROMISE,  CA_COMPROMISE, AFFILIATION_CHANGED, SUPERSEDED, CESSATION_OF_OPERATION,  CERTIFICATE_HOLD, REMOVE_FROM_CRL, PRIVILEGES_WITHDRAWN, AA_COMPROMISE
-    String date = "date_example"; // String | ISO 8601 Date string, eg. '2018-06-15T14:07:09Z'
+    OffsetDateTime date = OffsetDateTime.now(); // OffsetDateTime | ISO 8601 Date string, eg. '2018-06-15T14:07:09Z'
     try {
       RevokeStatusRestResponse result = apiInstance.revokeCertificate(issuerDn, certificateSerialNumber, reason, date);
       System.out.println(result);
@@ -443,7 +443,7 @@ public class Example {
 | **issuerDn** | **String**| Subject DN of the issuing CA | |
 | **certificateSerialNumber** | **String**| hex serial number (without prefix, e.g. &#39;00&#39;) | |
 | **reason** | **String**| Must be valid RFC5280 reason. One of  NOT_REVOKED, UNSPECIFIED ,KEY_COMPROMISE,  CA_COMPROMISE, AFFILIATION_CHANGED, SUPERSEDED, CESSATION_OF_OPERATION,  CERTIFICATE_HOLD, REMOVE_FROM_CRL, PRIVILEGES_WITHDRAWN, AA_COMPROMISE | [optional] |
-| **date** | **String**| ISO 8601 Date string, eg. &#39;2018-06-15T14:07:09Z&#39; | [optional] |
+| **date** | **OffsetDateTime**| ISO 8601 Date string, eg. &#39;2018-06-15T14:07:09Z&#39; | [optional] |
 
 ### Return type
 
@@ -474,11 +474,11 @@ Insert as many search criteria as needed. A reference about allowed values for c
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CertificateApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CertificateApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -536,11 +536,11 @@ Returns status, API version and EJBCA version.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.V1CertificateApi;
+import com.keyfactor.ejbca.client.ApiClient;
+import com.keyfactor.ejbca.client.ApiException;
+import com.keyfactor.ejbca.client.Configuration;
+import com.keyfactor.ejbca.client.models.*;
+import com.keyfactor.ejbca.client.api.V1CertificateApi;
 
 public class Example {
   public static void main(String[] args) {
