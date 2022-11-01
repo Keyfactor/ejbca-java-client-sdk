@@ -1,4 +1,14 @@
 /*
+ * Copyright 2022 Keyfactor
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may
+ * not use this file except in compliance with the License.  You may obtain a
+ * copy of the License at http://www.apache.org/licenses/LICENSE-2.0.  Unless
+ * required by applicable law or agreed to in writing, software distributed
+ * under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
+ * OR CONDITIONS OF ANY KIND, either express or implied. See the License for
+ * thespecific language governing permissions and limitations under the
+ * License.
+ *
  * EJBCA REST Interface
  * API reference documentation.
  *
@@ -48,7 +58,7 @@ import com.keyfactor.ejbca.client.JSON;
  * Use one of allowed values as property(see enum values below). Available TOKEN - USERGENERATED, P12, BCFKS, JKS, PEM;  Available STATUS - NEW, FAILED, INITIALIZED, INPROCESS, GENERATED, REVOKED, HISTORICAL, KEYRECOVERY, WAITINGFORADDAPPROVAL; 
  */
 @ApiModel(description = "Use one of allowed values as property(see enum values below). Available TOKEN - USERGENERATED, P12, BCFKS, JKS, PEM;  Available STATUS - NEW, FAILED, INITIALIZED, INPROCESS, GENERATED, REVOKED, HISTORICAL, KEYRECOVERY, WAITINGFORADDAPPROVAL; ")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-10-27T11:03:33.187-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-01T11:20:10.237-07:00[America/Phoenix]")
 public class SetEndEntityStatusRestRequest {
   public static final String SERIALIZED_NAME_PASSWORD = "password";
   @SerializedName(SERIALIZED_NAME_PASSWORD)
