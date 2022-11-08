@@ -23,7 +23,7 @@
 
 package com.keyfactor.ejbca.client;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:12:50.631-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:22:53.234-07:00[America/Phoenix]")
 public class Configuration {
     private static ApiClient defaultApiClient = new ApiClient();
 

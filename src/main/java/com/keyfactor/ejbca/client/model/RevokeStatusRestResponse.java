@@ -58,7 +58,7 @@ import com.keyfactor.ejbca.client.JSON;
 /**
  * RevokeStatusRestResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:12:50.631-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:22:53.234-07:00[America/Phoenix]")
 public class RevokeStatusRestResponse {
   public static final String SERIALIZED_NAME_ISSUER_DN = "issuer_dn";
   @SerializedName(SERIALIZED_NAME_ISSUER_DN)
