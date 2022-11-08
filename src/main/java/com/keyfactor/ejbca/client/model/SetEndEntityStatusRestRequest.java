@@ -58,7 +58,7 @@ import com.keyfactor.ejbca.client.JSON;
  * Use one of allowed values as property(see enum values below). Available TOKEN - USERGENERATED, P12, BCFKS, JKS, PEM;  Available STATUS - NEW, FAILED, INITIALIZED, INPROCESS, GENERATED, REVOKED, HISTORICAL, KEYRECOVERY, WAITINGFORADDAPPROVAL; 
  */
 @ApiModel(description = "Use one of allowed values as property(see enum values below). Available TOKEN - USERGENERATED, P12, BCFKS, JKS, PEM;  Available STATUS - NEW, FAILED, INITIALIZED, INPROCESS, GENERATED, REVOKED, HISTORICAL, KEYRECOVERY, WAITINGFORADDAPPROVAL; ")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-01T11:20:10.237-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:12:50.631-07:00[America/Phoenix]")
 public class SetEndEntityStatusRestRequest {
   public static final String SERIALIZED_NAME_PASSWORD = "password";
   @SerializedName(SERIALIZED_NAME_PASSWORD)

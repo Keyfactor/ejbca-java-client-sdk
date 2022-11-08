@@ -212,7 +212,7 @@ Authentication schemes defined for the API:
 
 EJBCA REST Interface
 - API version: 1.0
-    - Build date: 2022-11-01T11:20:10.237-07:00[America/Phoenix]
+    - Build date: 2022-11-08T11:12:50.631-07:00[America/Phoenix]
 
 API reference documentation.
 

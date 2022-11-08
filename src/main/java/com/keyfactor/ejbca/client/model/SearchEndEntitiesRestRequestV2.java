@@ -61,7 +61,7 @@ import com.keyfactor.ejbca.client.JSON;
 /**
  * SearchEndEntitiesRestRequestV2
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-01T11:20:10.237-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:12:50.631-07:00[America/Phoenix]")
 public class SearchEndEntitiesRestRequestV2 {
   public static final String SERIALIZED_NAME_MAX_NUMBER_OF_RESULTS = "max_number_of_results";
   @SerializedName(SERIALIZED_NAME_MAX_NUMBER_OF_RESULTS)

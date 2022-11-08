@@ -59,7 +59,7 @@ import com.keyfactor.ejbca.client.JSON;
 /**
  * CertificateProfileInfoRestResponseV2
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-01T11:20:10.237-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:12:50.631-07:00[America/Phoenix]")
 public class CertificateProfileInfoRestResponseV2 {
   public static final String SERIALIZED_NAME_AVAILABLE_KEY_ALGS = "available_key_algs";
   @SerializedName(SERIALIZED_NAME_AVAILABLE_KEY_ALGS)

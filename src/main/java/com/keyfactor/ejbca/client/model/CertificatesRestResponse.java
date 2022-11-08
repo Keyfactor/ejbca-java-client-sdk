@@ -60,7 +60,7 @@ import com.keyfactor.ejbca.client.JSON;
 /**
  * CertificatesRestResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-01T11:20:10.237-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:12:50.631-07:00[America/Phoenix]")
 public class CertificatesRestResponse {
   public static final String SERIALIZED_NAME_CERTIFICATES = "certificates";
   @SerializedName(SERIALIZED_NAME_CERTIFICATES)
