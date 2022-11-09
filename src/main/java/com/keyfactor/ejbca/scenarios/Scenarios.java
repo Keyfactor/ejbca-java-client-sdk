@@ -44,7 +44,7 @@ public class Scenarios {
         // Extract CN from subject
         String username = "";
         if (!subject.contains("CN=")) {
-            System.out.println("Subject doesn't contain CN");
+            System.err.println("Subject doesn't contain CN");
             return null;
         }
         username = subject.split(",")[0]; // Remove everything after CN
@@ -55,7 +55,7 @@ public class Scenarios {
         try {
             csrPem = generateCSR(keyPair, subject);
         } catch (NoSuchAlgorithmException | NoSuchProviderException | OperatorCreationException | IOException e) {
-            System.out.printf("Failed to create certificate signing request: %s", e.getMessage());
+            System.err.printf("Failed to create certificate signing request: %s", e.getMessage());
             return null;
         }
 
@@ -64,7 +64,7 @@ public class Scenarios {
         try {
             caList = (new V1CaApi(defaultClient)).listCas();
         } catch (ApiException e) {
-            System.out.printf("Failed to get list of available CAs: %s", e.getMessage());
+            System.err.printf("Failed to get list of available CAs: %s", e.getMessage());
             return null;
         }
 
@@ -91,7 +91,7 @@ public class Scenarios {
         try {
             result = (new V1CertificateApi(defaultClient)).enrollPkcs10Certificate(csr);
         } catch (ApiException e) {
-            System.out.printf("Failed to enroll CSR: %s", e.getMessage());
+            System.err.printf("Failed to enroll CSR: %s", e.getMessage());
             return null;
         }
 
@@ -104,7 +104,7 @@ public class Scenarios {
             cert = (X509Certificate)cf.generateCertificate(certStream);
             certList.add(cert);
         } catch (CertificateException e) {
-            System.out.printf("Failed to import certificate into X509Certificate: %s", e.getMessage());
+            System.err.printf("Failed to import certificate into X509Certificate: %s", e.getMessage());
         }
 
         for (byte[] chainItemByte : Objects.requireNonNull(result.getCertificateChain())) {
@@ -115,7 +115,7 @@ public class Scenarios {
                 cert = (X509Certificate)cf.generateCertificate(certStream);
                 certList.add(cert);
             } catch (CertificateException e) {
-                System.out.printf("Failed to import certificate chain into X509Certificate: %s", e.getMessage());
+                System.err.printf("Failed to import certificate chain into X509Certificate: %s", e.getMessage());
             }
         }
 
@@ -155,7 +155,7 @@ public class Scenarios {
         try {
             keyPair = scenarios.generateKey("RSA", 2048);
         } catch (NoSuchAlgorithmException e) {
-            System.out.printf("Failed to create private key: %s", e.getMessage());
+            System.err.printf("Failed to create private key: %s", e.getMessage());
             throw new RuntimeException();
         }
 
