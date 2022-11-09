@@ -57,7 +57,7 @@ import com.keyfactor.ejbca.client.JSON;
 /**
  * CrlRestResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:22:53.234-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class CrlRestResponse {
   public static final String SERIALIZED_NAME_CRL = "crl";
   @SerializedName(SERIALIZED_NAME_CRL)

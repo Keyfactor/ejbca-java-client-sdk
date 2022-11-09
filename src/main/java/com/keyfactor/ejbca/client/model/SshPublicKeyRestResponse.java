@@ -57,7 +57,7 @@ import com.keyfactor.ejbca.client.JSON;
 /**
  * SshPublicKeyRestResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-11-08T11:22:53.234-07:00[America/Phoenix]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class SshPublicKeyRestResponse {
   public static final String SERIALIZED_NAME_CA_NAME = "ca_name";
   @SerializedName(SERIALIZED_NAME_CA_NAME)
