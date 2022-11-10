@@ -1,7 +1,7 @@
 # Community supported
 We welcome contributions.
 
-The Keyfactor Python Client SDK is open source and community supported, meaning that there is **no SLA** applicable for these tools.
+The Keyfactor EJBCA Java SDK is open source and community supported, meaning that there is **no SLA** applicable for these tools.
 
 To report a problem or suggest a new feature, use the **[Issues](../../issues)** tab. If you want to contribute actual bug fixes or proposed enhancements, use the **[Pull requests](../../pulls)** tab.
 
