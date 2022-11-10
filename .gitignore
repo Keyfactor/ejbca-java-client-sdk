@@ -27,3 +27,4 @@ test
 ejbca_openapi3.yaml
 .openapi-generator
 .openapi-generator-ignore
+git_push.sh
