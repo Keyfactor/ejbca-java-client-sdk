@@ -11,7 +11,7 @@
     <scm>
         <connection>scm:git:git@github.com:Keyfactor/ejbca-java-client-sdk.git</connection>
         <developerConnection>scm:git:git@github.com:Keyfactor/ejbca-java-client-sdk.git</developerConnection>
-        <url>https://github.com/Keyfactor/ejbca-java-client-sdk</url>
+        <url>git@github.com:Keyfactor/ejbca-java-client-sdk.git</url>
     </scm>
 
     <licenses>
